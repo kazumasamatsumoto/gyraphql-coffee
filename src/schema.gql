@@ -2,8 +2,10 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
+"""Coffee model"""
 type Coffee {
-  id: Float!
+  """A unique identifier"""
+  id: ID!
   name: String!
   brand: String!
   flavors: [String!]!
