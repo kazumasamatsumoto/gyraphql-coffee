@@ -3,7 +3,7 @@
 # ------------------------------------------------------
 
 type Coffee {
-  id: Int!
+  id: Float!
   name: String!
   brand: String!
   flavors: [String!]!
