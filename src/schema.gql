@@ -13,4 +13,5 @@ type Coffee {
 
 type Query {
   coffees: [Coffee!]!
+  coffee(id: ID!): Coffee
 }
