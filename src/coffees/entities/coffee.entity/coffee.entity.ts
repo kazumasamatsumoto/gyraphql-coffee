@@ -8,10 +8,11 @@ import {
   PrimaryGeneratedColumn,
 } from 'typeorm';
 import { Flavor } from '../flavor.entity/flavor.entity';
+import { Drink } from 'src/common/interfaces/drink.interface/drink.interface';
 
 @Entity()
-@ObjectType({ description: 'Coffee model' })
-export class Coffee {
+@ObjectType({ description: 'Coffee model', implements: () => Drink })
+export class Coffee implements Drink {
   @PrimaryGeneratedColumn()
   @Field(() => ID, { description: 'A unique identifier' })
   id: number;
